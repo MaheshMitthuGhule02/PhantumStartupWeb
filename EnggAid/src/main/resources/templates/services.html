@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" th:href="@{/css/styles1.css}">
+</head>
+<body >
+<div th:style="'background-image: url(' + @{/img/bg2.jpg} + '); background-size: cover; background-position: center;'">
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top px-4 px-lg-5 py-3 py-lg-0">
+        <a th:href="@{/home}" class="navbar-brand p-0">
+            <h1 class="text-primary d-flex align-items-center">
+                <img width="80" height="80" th:src="@{/img/logo.png}" alt="TECH PHANTOM" />
+                &nbsp; TECH PHANTOM
+            </h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a th:href="@{/home}" class="nav-item nav-link active"><strong>Home</strong></a>
+                <a th:href="@{/service}" class="nav-item nav-link active"><strong>Service</strong></a>
+                <a th:href="@{/product}" class="nav-item nav-link active"><strong>Products</strong></a>
+                <a th:href="@{/work}" class="nav-item nav-link active"><strong>Form</strong></a>
+                <a th:href="@{/team}" class="nav-item nav-link active"><strong>Team</strong></a>
+                <a th:href="@{/contact}" class="nav-item nav-link active"><strong>Contact</strong></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Services Section -->
+    <div class="container mt-4" style="margin-top: 5.5rem !important;">
+        <h1 class="text-center mb-4" style="color:white">Our Services</h1>
+        <div class="row">
+            <!-- Black Book -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <img th:src="@{/img/blackbook.webp}" class="card-img-top" alt="Black Book" src="">
+                    <div class="card-header text-center">
+                        <h5>Black Book Printing and Binding</h5>
+                    </div>
+                    <div class="card-body">
+                        <ol>
+                            <li><strong>Top-Quality Printing:</strong> Premium JK Copier Bond paper ensures crisp, clear, and professional results.</li>
+                            <li><strong>Durable Binding:</strong> Our robust binding withstands frequent use, maintaining a sleek look.</li>
+                            <li><strong>Custom Covers: </strong> Choose from diverse designs to match your college's or personal preferences.</li>
+                        </ol>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="https://wa.me/7888009430?text=Hi%20I%27d%20like%20to%20order%20the%20Black%20Book.%20Please%20provide%20me%20with%20more%20details.%20Thank%20you!" class="btn-get" target="_blank">Get It</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Report -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <img th:src="@{/img/report.webp}" class="card-img-top" alt="report" src="">
+                    <div class="card-header text-center">
+                        <h5>Project Report Building </h5>
+                    </div>
+                    <div class="card-body">
+                        <ol>
+                            <li><strong>Precise Formatting:</strong> We adhere to your college's guidelines for font, margins, and citations.</li>
+                            <li><strong>Organized Content:</strong> Structuring ensures clarity and logical flow in every section of your report.</li>
+                            <li><strong>Thorough Proofreading</strong> We polish your report for grammatical accuracy and coherence.</li>
+                        </ol>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="https://wa.me/7888009430?text=Hi%20I%27d%20like%20to%20order%20the%20Report.%20Please%20provide%20me%20with%20more%20details.%20Thank%20you!" class="btn-get" target="_blank">Get It</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Paper -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <img th:src="@{/img/research.png}" class="card-img-top" alt="Document" src="">
+                    <div class="card-header text-center">
+                        <h5>Research Paper and Publishing (UGC CARE)</h5>
+                    </div>
+                    <div class="card-body">
+                        <ol>
+                            <li><strong>Guided to Research::</strong> Assistance from topic selection to surveys or experiments.</li>
+                            <li><strong>Expert Documentation: </strong>  Formatting and writing your paper to meet UGC standards.</li>
+                            <li><strong>Publication Help:</strong>  Support in choosing journals and managing the submission process.</li>
+                        </ol>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="https://wa.me/7888009430?text=Hi%20I%27d%20like%20to%20order%20the%20Research%20Paper.%20Please%20provide%20me%20with%20more%20details.%20Thank%20you!" class="btn-get" target="_blank">Get It</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer bg-light py-3 mt-auto">
+    <div class="container text-center">
+        <p class="mb-0" style="color: grey;">&copy; 2024 EnggAid. All rights reserved. &nbsp;Designed by Jaykumar Gunjawale JK</p>
+    </div>
+</footer>
+
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
